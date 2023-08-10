@@ -1,15 +1,22 @@
 <html>
     <head></head>
     <body>
-        <img src="star.avif" width="200px" height="200px" id="image1" onmouseover="a()" alt="" onmouseout="out()">
         
+        <img src="images/a.jpg" width="200px" height="200px" id="main" alt="" ><br>
+
+        <img src="images/a2.jpg" width="200px" height="200px" alt="" onmouseover="first(this.src)" onmouseout="out()">
+        <img src="images/d.jpg" width="200px" height="200px" alt="" onmouseover="first(this.src)" onmouseout="out()">
+        <img src="images/g1.jpg" width="200px" height="200px" alt="" onmouseover="first(this.src)" onmouseout="out()">
+        <img src="images/g2.jpg" width="200px" height="200px" alt="" onmouseover="first(this.src)" onmouseout="out()">
+        <img src="images/g3.jpg" width="200px" height="200px" alt="" onmouseover="first(this.src)" onmouseout="out()">
+
         <script>
-            function a(){
-                //set item
-                document.getElementById("image1").src = "star2.png"
+            function first(data){
+                //console.log(data)
+                document.getElementById("main").src=data;
             }
             function out(){
-                document.getElementById("image1").src="star.jpg"
+                document.getElementById("main").src="images/a.jpg"
             }
         </script>
     </body>
