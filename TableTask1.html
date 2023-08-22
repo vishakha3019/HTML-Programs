@@ -1,0 +1,19 @@
+Enter any Number <input type="number" id="no"><br>
+Enter Start Point <input type="number" id="s"><br>
+Enter End Point <input type="number" id="e"><br>
+<button onclick="gen()">Generate</button>
+
+<p id="result"></p>
+
+<script>
+    function gen(){
+        var no = document.getElementById("no").value;
+        var s = document.getElementById("s").value;
+        var e = document.getElementById("e").value;
+        document.getElementById("result").innerHTML =""
+        for(i=s;i<=e;i++)
+        {
+            document.getElementById("result").innerHTML += no+"*"+i+"="+no*i+"<br>"
+        }
+    }
+</script>
