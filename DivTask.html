@@ -1,0 +1,23 @@
+Enter any Number <input type="number" id="no"><br>
+Enter Height <input type="number" id="hgt"><br>
+Enter Width <input type="number" id="wth"><br>
+Select Color <input type="color" id="clr"><br>
+
+<button onclick="gen()">Generate</button>
+
+<div id="result"></div>
+
+<script>
+    function gen() {
+        var no = document.getElementById("no").value;
+        var hgt = document.getElementById("hgt").value;
+        var wth = document.getElementById("wth").value;
+        var clr = document.getElementById("clr").value;
+      
+        document.getElementById("result").innerHTML = ""
+        for (i = 1; i <= no; i++) {
+            document.getElementById("result").innerHTML +=
+                "<div style = 'height:" + hgt + "px; width:" + wth + "px ;background:" + clr+"; margin:10px;float:left;'></div>";
+        }
+    }
+</script>
