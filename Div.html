@@ -1,0 +1,15 @@
+Enter any Number <input type="number" id="no"><br>
+<button onclick="gen()">Generate</button>
+
+<p id="result"></p>
+
+<script>
+    function gen(){
+        var no = document.getElementById("no").value;
+        document.getElementById("result").innerHTML =""
+        for(i=1;i<=no;i++)
+        {
+            document.getElementById("result").innerHTML += "<div style='width:100px;height:100px;background:green;margin:10px;float:left'></div>"
+        }
+    }
+</script>
